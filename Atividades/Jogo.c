@@ -1,49 +1,74 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 
-int main(){
-	int jogo;
-	
-	printf("-----Steam indie-----\n");
-	printf("Jogo das pergunstas (1)\n");
-	printf("Cobra na caixa (2)\n");
-	printf("Gousmas War (3)\n");
-	scanf("%d", &jogo);
-	if(jogo == 1){
-		int pontos = 0;
-		int resposta;
+int main() {
+    int jogo;
+
+    printf("-----Steam indie-----\n");
+    printf("Jogo das perguntas (1)\n");
+    printf("Cobra na caixa (2)\n");
+    printf("Gousmas War (3)\n");
+    scanf("%d", &jogo);
+
+    if (jogo == 1) {
+        int pontos = 0;
+        int resposta;
+
+        printf("Primeira pergunta\n");
+        printf("Qual o unico time do norte a disputar uma Libertadores?\n");
+        printf("Paysandu (1)\n");
+        printf("Manaus (2)\n");
+        printf("Goias (3)\n");
+        printf("Remo (4)\n");
+        scanf("%d", &resposta);
+
+        if (resposta == 1) {
+            pontos += 200;
+            printf("Acertou! Voce ganhou 200 pontos. Total: %d\n", pontos);
+        } else if (resposta == 2) {
+            printf("Errou, so disputa serie D\n");
+        } else if (resposta == 3) {
+            printf("Errou, Goias e do norte? kkkkkkkkkkkkk\n");
+        } else {
+            printf("Errou, Remo so disputa Rainha das Rainhas\n");
+        }
+        
+        system("pause");
+        system("cls");
+        
+        printf("Segunda pergunta\n");
+        printf("Qual o unico time do norte a disputar uma Libertadores?\n");
+        printf("Paysandu (1)\n");
+        printf("Manaus (2)\n");
+        printf("Goias (3)\n");
+        printf("Remo (4)\n");
+        scanf("%d", &resposta);
 		
-		printf("Primeira pergunta\n");
-		printf("Qual o unico time do norte a disputa uma Libertadores?\n");
-		printf("Paysandu (1)\n");
-		printf("Manaus (2)\n");
-		printf("Goias (3)\n");
-		printf("Remo (4)\n");
-		scanf("%d", &resposta);
-		if(resposta == 1){
-			printf("acertou mais 200 pontos");
-			pontos + 200;
-			pergunta + 2;
-		} else if(resposta == 2){
-			printf("errou, so disputa serie D");
-		}else if(resposta == 3){
-			printf("errou, Goias e do norte? kkkkkkkkkkkkk");
-		}else{
-			printf("errou, remo so disputa rainha das rainhas");
-		}
-	
-		
-			
-			
-	} else if( pergunta == 2){
-		printf("Calma, to fazendo pae");
-	} else if(jogo == 3){
-		printf("calma, to fazendo pae");
-	} else{
-		printf("TO FAZENDO EGUA");
-	}
-	
-	
-	
-	return 0;
+        if (resposta == 1) {
+            pontos += 200;
+            printf("Acertou! Voce ganhou 200 pontos. Total: %d\n", pontos);
+        } else if (resposta == 2) {
+            printf("Errou, so disputa serie D\n");
+        } else if (resposta == 3) {
+            printf("Errou, Goias e do norte? kkkkkkkkkkkkk\n");
+        } else {
+            printf("Errou, Remo so disputa Rainha das Rainhas\n");
+        }
+        
+        
+        system("pause");
+        
+        printf("pontuacao total: %d", pontos);
+        
+        
+
+    } else if (jogo == 2) {
+        printf("Calma, to fazendo pae\n");
+    } else if (jogo == 3) {
+        printf("Calma, to fazendo pae\n");
+    } else {
+        printf("TO FAZENDO EGUA\n");
+    }
+
+    return 0;
 }
