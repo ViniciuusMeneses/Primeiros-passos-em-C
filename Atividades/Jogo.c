@@ -37,7 +37,7 @@ int main() {
         system("cls");
         
         printf("Segunda pergunta\n");
-        printf("Qual o unico time do norte a disputar uma Libertadores?\n");
+        printf("Qual o atual time disputando a primeira divisão\n");
         printf("Paysandu (1)\n");
         printf("Manaus (2)\n");
         printf("Goias (3)\n");
