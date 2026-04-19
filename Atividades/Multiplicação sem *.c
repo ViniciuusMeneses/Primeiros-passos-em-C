@@ -11,7 +11,7 @@ int main() {
     
     int i = 0;
     while (i < num2) {
-        res += num1;  // soma num1 repetidamente
+        res += num1;  
         i++;
     }
     
