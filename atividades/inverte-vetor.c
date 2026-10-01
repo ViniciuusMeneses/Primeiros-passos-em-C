@@ -8,7 +8,7 @@ int main()
 	for(i = 0; i < n; i++){
 		scanf("%d", &v[i]);
 	}
-	for(n = 0, i = 9; i > n; i--){
+	for(n = 0, i = 9; i >= n; i--){
 		printf("%d\n", v[i]);
 	}
 	return 0;

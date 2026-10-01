@@ -11,3 +11,5 @@ int main()
 	for(i = 1; i <= 10; i++){
 		printf("%d \n", esc*i);
 	}
+	return 0;
+}
